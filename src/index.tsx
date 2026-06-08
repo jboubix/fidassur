@@ -24,11 +24,11 @@ function Layout({ children }: { children: any }) {
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Fidassur — Agent Wafa Assurance, Maroc</title>
-  <meta name="description" content="Fidassur, agent Wafa Assurance au Maroc. Solutions auto, santé, habitation, épargne et professionnelle." />
-  <meta name="keywords" content="assurance, agent, Wafa, Maroc, Fidassur, auto, santé, habitation" />
-  <meta property="og:title" content="Fidassur — Agent Wafa Assurance" />
-  <meta property="og:description" content="Agent Wafa Assurance au Maroc." />
+  <title>Assurances El Fida (Fidassur) — Agent Wafa Assurance, Casablanca</title>
+  <meta name="description" content="Assurances El Fida (Fidassur), agent Wafa Assurance à Casablanca. 238 Bd El Fida, Nouvelle Medina. Tél: 05 22 28 79 01. Auto, santé, habitation, épargne, professionnel." />
+  <meta name="keywords" content="assurance, agent, Wafa, Casablanca, Fidassur, El Fida, auto, santé, habitation, Maroc" />
+  <meta property="og:title" content="Assurances El Fida (Fidassur) — Agent Wafa Assurance" />
+  <meta property="og:description" content="Agent Wafa Assurance à Casablanca. 238 Bd El Fida, Nouvelle Medina." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://fidassur.ma" />
   <link rel="canonical" href="https://fidassur.ma" />
@@ -77,7 +77,7 @@ function Nav() {
             <div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
               <span class="text-white font-bold text-sm">F</span>
             </div>
-            <span class="font-semibold text-primary text-lg hidden sm:block">Fidassur</span>
+            <span class="font-semibold text-primary text-lg hidden sm:block">Assurances El Fida</span>
           </a>
           <div class="flex items-center gap-6 text-sm font-medium text-gray-600">
             <a href="#about" class="hover:text-primary transition-colors">À propos</a>
@@ -105,17 +105,17 @@ function Hero() {
               </div>
             </div>
             <h1 class="fade-in delay-1 text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight">
-              Fidassur<br />
-              <span class="text-accent">Assurance</span>
+              Assurances<br />
+              <span class="text-accent">El Fida</span>
             </h1>
             <p class="fade-in delay-2 text-xl text-white/80 max-w-xl leading-relaxed">
-              Votre agent <strong class="text-white">Wafa Assurance</strong> de confiance.
+              Votre agent <strong class="text-white">Wafa Assurance</strong> de confiance à <strong class="text-white">Casablanca</strong>.
               Solutions d'assurance complètes pour particuliers et professionnels.
             </p>
             <div class="fade-in delay-3 flex flex-wrap gap-4">
-              <a href="#contact" class="inline-flex items-center gap-2 bg-accent hover:bg-accent-dark text-primary-dark font-semibold px-8 py-4 rounded-xl transition-all shadow-lg hover:shadow-xl">
-                Demander un devis
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+              <a href="tel:0522287901" class="inline-flex items-center gap-2 bg-accent hover:bg-accent-dark text-primary-dark font-semibold px-8 py-4 rounded-xl transition-all shadow-lg hover:shadow-xl">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                05 22 28 79 01
               </a>
               <a href="#services" class="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white font-medium px-8 py-4 rounded-xl transition-all backdrop-blur-sm border border-white/20">
                 Découvrir nos services
@@ -126,8 +126,8 @@ function Hero() {
             <div class="relative">
               <div class="w-80 h-80 rounded-full bg-white/5 backdrop-blur-sm border border-white/10 flex items-center justify-center">
                 <div class="text-center">
-                  <div class="text-7xl font-bold text-accent">Wafa</div>
-                  <div class="text-white/60 text-lg mt-2">Assurance</div>
+                  <div class="text-7xl font-bold text-accent">Fidassur</div>
+                  <div class="text-white/60 text-lg mt-2">El Fida</div>
                 </div>
               </div>
             </div>
@@ -150,10 +150,11 @@ function About() {
               À propos
             </div>
             <h2 class="text-3xl sm:text-4xl font-bold text-primary-dark">
-              Votre agent <span class="text-accent">Wafa Assurance</span>
+              Votre agent <span class="text-accent">Wafa Assurance</span> à Casablanca
             </h2>
             <p class="text-gray-600 leading-relaxed text-lg">
-              <strong>Fidassur</strong> est un agent <strong>Wafa Assurance</strong> basé au Maroc.
+              <strong>Assurances El Fida (Fidassur)</strong> est un agent <strong>Wafa Assurance</strong> 
+              basé à <strong>Casablanca</strong>, au <strong>238 Boulevard El Fida, Nouvelle Medina</strong>.
               Nous accompagnons les particuliers et les entreprises avec des solutions
               d'assurance adaptées à leurs besoins.
             </p>
@@ -164,8 +165,8 @@ function About() {
             <div class="grid grid-cols-3 gap-6 pt-4">
               {[
                 { value: 'Wafa', label: 'Agent assurance' },
-                { value: 'Maroc', label: 'Couverture nationale' },
-                { value: 'Particulier', label: 'Pro & Entreprise' },
+                { value: 'Casa', label: 'Nouvelle Medina' },
+                { value: 'Pro', label: 'Particulier' },
               ].map((stat) => (
                 <div key={stat.label} class="text-center">
                   <div class="text-3xl font-bold text-primary">{stat.value}</div>
@@ -304,23 +305,24 @@ function Contact() {
                       <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
                     ),
                     label: 'Adresse',
-                    value: 'Maroc',
+                    value: '238, Boulevard El Fida',
+                    value2: 'Nouvelle Medina, Casablanca 20000',
                   },
                   {
                     icon: (
                       <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
                     ),
                     label: 'Téléphone',
-                    value: 'Contactez-nous',
-                    href: 'mailto:contact@fidassur.ma',
+                    value: '05 22 28 79 01',
+                    href: 'tel:0522287901',
                   },
                   {
                     icon: (
                       <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
                     ),
                     label: 'Email',
-                    value: 'contact@fidassur.ma',
-                    href: 'mailto:contact@fidassur.ma',
+                    value: 'assurances.elfida@wafaassurance.co.ma',
+                    href: 'mailto:assurances.elfida@wafaassurance.co.ma',
                   },
                   {
                     icon: (
@@ -343,11 +345,22 @@ function Contact() {
                       ) : (
                         <div class="text-lg font-semibold text-gray-800">{item.value}</div>
                       )}
+                      {item.value2 && <div class="text-gray-600">{item.value2}</div>}
                     </div>
                   </div>
                 ))}
               </div>
             </div>
+            <a
+              href="https://maps.google.com/?q=238+Boulevard+El+Fida+Casablanca"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="flex items-center justify-center gap-2 bg-white hover:bg-gray-50 text-primary font-medium px-6 py-4 rounded-xl border border-gray-200 transition-all group"
+            >
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+              Voir sur Google Maps
+              <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+            </a>
           </div>
           <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 flex flex-col items-center justify-center text-center">
             <div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center text-primary mb-6">
@@ -358,11 +371,11 @@ function Contact() {
               Pour toute demande de devis ou d'information, écrivez-nous à :
             </p>
             <a
-              href="mailto:contact@fidassur.ma"
+              href="mailto:assurances.elfida@wafaassurance.co.ma"
               class="inline-flex items-center gap-3 bg-primary hover:bg-primary-light text-white font-semibold px-8 py-4 rounded-xl transition-all shadow-lg hover:shadow-xl text-lg"
             >
               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
-              contact@fidassur.ma
+              assurances.elfida@wafaassurance.co.ma
             </a>
             <p class="text-xs text-gray-400 mt-4">Nous vous répondrons dans les plus brefs délais.</p>
           </div>
@@ -383,10 +396,11 @@ function Footer() {
               <div class="w-8 h-8 bg-accent rounded-lg flex items-center justify-center">
                 <span class="text-primary-dark font-bold text-sm">F</span>
               </div>
-              <span class="font-semibold text-white">Fidassur</span>
+              <span class="font-semibold text-white">Assurances El Fida</span>
             </div>
             <p class="text-sm leading-relaxed">
-              Agent Wafa Assurance au Maroc.
+              Agent Wafa Assurance à Casablanca.
+              238 Bd El Fida, Nouvelle Medina.
             </p>
           </div>
           <div>
@@ -402,8 +416,13 @@ function Footer() {
           <div>
             <h4 class="font-semibold text-white mb-4">Contact</h4>
             <ul class="space-y-2 text-sm">
+              <li>238, Bd El Fida</li>
+              <li>Nouvelle Medina, Casablanca</li>
               <li>
-                <a href="mailto:contact@fidassur.ma" class="hover:text-white transition-colors">contact@fidassur.ma</a>
+                <a href="tel:0522287901" class="hover:text-white transition-colors">05 22 28 79 01</a>
+              </li>
+              <li>
+                <a href="mailto:assurances.elfida@wafaassurance.co.ma" class="hover:text-white transition-colors">assurances.elfida@wafaassurance.co.ma</a>
               </li>
               <li>Lun–Ven: 8h30–18h30 | Sam: 9h–14h</li>
             </ul>
@@ -419,8 +438,8 @@ function Footer() {
           </div>
         </div>
         <div class="border-t border-white/10 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm">
-          <p>&copy; {new Date().getFullYear()} Fidassur. Tous droits réservés.</p>
-          <p class="text-white/40">Agent Wafa Assurance — Maroc</p>
+          <p>&copy; {new Date().getFullYear()} Assurances El Fida (Fidassur). Tous droits réservés.</p>
+          <p class="text-white/40">Agent Wafa Assurance — Casablanca, Maroc</p>
         </div>
       </div>
     </footer>
