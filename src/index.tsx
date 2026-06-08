@@ -9,8 +9,7 @@ app.get('/', (c) => {
       <Nav />
       <Hero />
       <About />
-      <Services />
-      <Contact />
+            <Contact />
       <Footer />
     </Layout>
   )
@@ -81,7 +80,6 @@ function Nav() {
           </a>
           <div class="flex items-center gap-6 text-sm font-medium text-gray-600">
             <a href="#about" class="hover:text-primary transition-colors">À propos</a>
-            <a href="#services" class="hover:text-primary transition-colors">Services</a>
             <a href="#contact" class="hover:text-primary transition-colors">Contact</a>
           </div>
         </div>
@@ -192,85 +190,6 @@ function About() {
               ))}
             </ul>
           </div>
-        </div>
-      </div>
-    </section>
-  )
-}
-
-// ── Services ────────────────────────────────────────────
-function Services() {
-  const services = [
-    {
-      icon: (
-        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-      ),
-      title: 'Assurance Auto & Moto',
-      desc: 'Protection complète pour vos véhicules : responsabilité civile, tous risques, vol, incendie, bris de glace.',
-    },
-    {
-      icon: (
-        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
-      ),
-      title: 'Assurance Habitation',
-      desc: 'Protégez votre foyer et vos biens : multirisque habitation, incendie, dégâts des eaux, vol, responsabilité civile.',
-    },
-    {
-      icon: (
-        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
-      ),
-      title: 'Assurance Santé',
-      desc: 'Couverture médicale pour vous et votre famille : hospitalisation, soins courants, maternité, optique, dentaire.',
-    },
-    {
-      icon: (
-        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-      ),
-      title: 'Épargne & Prévoyance',
-      desc: 'Solutions d\'épargne et de prévoyance pour sécuriser l\'avenir : assurance-vie, retraite, épargne éducation.',
-    },
-    {
-      icon: (
-        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 13.255A24.174 24.174 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
-      ),
-      title: 'Assurance Professionnelle',
-      desc: 'Solutions pour les entreprises : multirisque professionnelle, responsabilité civile, flotte automobile, chantier.',
-    },
-    {
-      icon: (
-        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
-      ),
-      title: 'Conseil & Accompagnement',
-      desc: 'Audit de vos contrats existants, optimisation de votre couverture, assistance en cas de sinistre.',
-    },
-  ]
-
-  return (
-    <section id="services" class="py-24 bg-white">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center max-w-2xl mx-auto mb-16">
-          <div class="inline-flex items-center gap-2 text-primary font-semibold text-sm tracking-wider uppercase mb-4">
-            <span class="w-8 h-px bg-accent" />
-            Nos services
-          </div>
-          <h2 class="text-3xl sm:text-4xl font-bold text-primary-dark">
-            Des solutions adaptées à vos besoins
-          </h2>
-          <p class="text-gray-600 mt-4 text-lg">
-            Forts de notre partenariat avec Wafa Assurance, nous vous proposons une gamme complète
-            de produits d'assurance pour les particuliers et les professionnels.
-          </p>
-        </div>
-        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {services.map((s) => (
-            <div key={s.title} class="group bg-gray-50 rounded-2xl p-8 hover:bg-primary hover:text-white transition-all duration-300 cursor-default">
-              <div class="w-14 h-14 bg-primary/10 group-hover:bg-white/20 rounded-xl flex items-center justify-center text-primary group-hover:text-white transition-all mb-5">
-                {s.icon}
-              </div>
-              <h3 class="text-xl font-bold mb-3 group-hover:text-white transition-colors">{s.title}</h3>
-              <p class="text-gray-600 group-hover:text-white/80 transition-colors leading-relaxed">{s.desc}</p>
-            </div>
-          ))}
         </div>
       </div>
     </section>
@@ -402,16 +321,6 @@ function Footer() {
               Agent Wafa Assurance à Casablanca.
               238 Bd El Fida, Nouvelle Medina.
             </p>
-          </div>
-          <div>
-            <h4 class="font-semibold text-white mb-4">Services</h4>
-            <ul class="space-y-2 text-sm">
-              <li>Auto & Moto</li>
-              <li>Habitation</li>
-              <li>Santé</li>
-              <li>Épargne & Prévoyance</li>
-              <li>Professionnel</li>
-            </ul>
           </div>
           <div>
             <h4 class="font-semibold text-white mb-4">Contact</h4>
