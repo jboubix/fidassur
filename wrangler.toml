@@ -1,0 +1,9 @@
+name = "fidassur"
+compatibility_date = "2025-04-01"
+main = "src/index.tsx"
+
+[env.production]
+name = "fidassur"
+routes = [
+  { pattern = "fidassur.ma", custom_domain = true }
+]
